@@ -1,0 +1,462 @@
+.button{
+    text-decoration-line: none;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+.button:active {
+    scale: 0.92;
+  }
+  
+.button:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+  .button_1 {
+      text-decoration-line: none;
+      width: 150px;
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: .125em;
+    --curve-size: .5em;
+    --blur: 30px;
+    --bg: #080312;
+    --color: #afffff;
+    color: var(--color);
+      /* use position: relative; so that BG is only for .btn */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: .5em 1.5em;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .6);
+    clip-path: polygon(
+              /* Top-left */
+              0% var(--curve-size),
+  
+              var(--curve-size) 0,
+              /* top-right */
+              100% 0,
+              100% calc(100% - var(--curve-size)),
+  
+              /* bottom-right 1 */
+              calc(100% - var(--curve-size)) 100%,
+              /* bottom-right 2 */
+              0 100%);
+    transition: color 250ms;
+  }
+  
+  .button_1::after,
+  .button_1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  
+  .button_1::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+  }
+  
+  @keyframes move-bg7234 {
+    0% {
+      background-position: 31% 0%
+    }
+  
+    50% {
+      background-position: 70% 100%
+    }
+  
+    100% {
+      background-position: 31% 0%
+    }
+  }
+  
+  .button_1::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+              /* Top-left */
+              var(--border-width) 
+              calc(var(--curve-size) + var(--border-width) * .5),
+  
+              calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),
+  
+              /* top-right */
+              calc(100% - var(--border-width)) 
+              var(--border-width),
+  
+              calc(100% - var(--border-width)) 
+              calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+  
+              /* bottom-right 1 */
+              calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),
+              /* bottom-right 2 */
+              var(--border-width) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+  }
+  
+  .button_1:where(:hover, :focus)::after {
+    clip-path: polygon(
+                  /* Top-left */
+                  calc(100% - var(--border-width)) 
+  
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+      
+                  calc(100% - var(--border-width))
+  
+                  var(--border-width),
+      
+                  /* top-right */
+                  calc(100% - var(--border-width))
+  
+                   var(--border-width),
+      
+                  calc(100% - var(--border-width)) 
+  
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),
+      
+                  /* bottom-right 1 */
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) 
+                  calc(100% - var(--border-width)),
+  
+                  /* bottom-right 2 */
+                  calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5))
+                  calc(100% - var(--border-width)));
+    transition: 200ms;
+  }
+  
+  .button_1:where(:hover, :focus) {
+    color: #fff;
+  }
+
+  .button_2 {
+    
+    font-family: "Lexend Deca", sans-serif;
+    border: none;
+    background-image: linear-gradient(to right top, #5FFBF1,#D16BA5,#86A8E7);
+    color: #ffffff;
+    font-size: 17px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    padding: 13px 26px;
+    cursor: pointer;
+    transform: skew(15deg);
+    transition: all 1s;
+  }
+  
+  .main-text {
+    display: inline-block;
+    transform: skew(-15deg);
+  }
+  
+  .button_2:hover {
+    transform: translateY(-3px);
+    background-image: linear-gradient(to bottom, #D16BA5,#86A8E7,#5FFBF1);
+    border-radius: 26px;
+    animation: pulsate 1s infinite;
+  }
+  
+  .button_2:hover span {
+    display: inline-block;
+    transform: translateX(2px);
+    transition: all 1s;
+  }
+  
+  .button_2:focus {
+    outline: none;
+    border-radius: 26px;
+    animation: pulsate 1s infinite;
+  }
+  
+  @keyframes pulsate {
+    0% {
+      transform: scale(1);
+      box-shadow: none;
+    }
+  
+    50% {
+      transform: scale(1.03);
+      box-shadow: 0 16px 16px rgba(0, 0, 0, 0.4);
+    }
+  
+    100% {
+      transform: scale(1);
+      box-shadow: none;
+    }
+  }
+  .button_3 {
+    --main-focus: #2d8cf0;
+    --font-color: #dedede;
+    --bg-color-sub: #222;
+    --bg-color: #323232;
+    --main-color: #dedede;
+    position: relative;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+
+  }
+  
+  
+  .button_3 .button__icon {
+    padding-left: 20px;
+  }
+
+ 
+  
+  .button_3:hover {
+    background: var(--bg-color);
+    background-color: red;
+  }
+  
+  .button_3:hover .button__icon {
+    color: transparent;
+  }
+  
+  .button_3:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+  .button_4 {
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 1px solid #34974d;
+    background-color: #3aa856;
+    
+  }
+  
+  .button_4, .button_icon, .button_text {
+    transition: all 0.3s;
+  }
+  
+  .button_4 .button_text {
+    transform: translateX(30px);
+    color: #fff;
+    font-weight: 600;
+    text-decoration-line: none;
+  }
+  
+  .button_4 .button_icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: #34974d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button_4 .svg {
+    width: 30px;
+    stroke: #fff;
+  }
+  
+  .button_4:hover {
+    background: #34974d;
+  }
+  
+  .button_4:hover .button_text {
+    color: transparent;
+  }
+  
+  .button_4:hover .button_icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .button_4:active .button_icon {
+    background-color: #2e8644;
+  }
+  
+  .button_4:active {
+    border: 1px solid #2e8644;
+  }
+  .edit-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+  }
+  
+  .edit-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+  }
+  
+  .edit-svgIcon path {
+    fill: white;
+  }
+  
+  .edit-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color: blue;
+    align-items: center;
+  }
+  
+  .edit-button:hover .edit-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .edit-button::before {
+    display: none;
+    content: "Edit";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+  }
+  
+  .edit-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+  }
+
+  .Button_5 {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    color: white;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  
+  .svgIcon {
+    width: 16px;
+  }
+  
+  .svgIcon path {
+    fill: white;
+  }
+  
+  .Button_5::before {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    left: -100%;
+    top: 0;
+    transition-duration: .3s;
+    mix-blend-mode: difference;
+  }
+  
+  .Button_5:hover::before {
+    transition-duration: .3s;
+    transform: translate(100%,-50%);
+    border-radius: 0;
+  }
+  
+  .Button_5:active {
+    transform: translate(5px,5px);
+    transition-duration: .3s;
+  }
+
+  .button_6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 2px;
+    height: 40px;
+    width: 85px;
+    border: none;
+    background: #a549da3d;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .lable {
+    line-height: 22px;
+    font-size: 15px;
+    color: #A649DA;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  .button_6:hover {
+    background: #a549da62;
+  }
+  
+  .button_6:hover .svg-icon {
+    animation: lr 1s linear infinite;
+  }
+  
+  @keyframes lr {
+    0% {
+      transform: translateX(0);
+    }
+  
+    25% {
+      transform: translateX(-1px);
+    }
+  
+    75% {
+      transform: translateX(1px);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+  

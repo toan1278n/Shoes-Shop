@@ -1,0 +1,394 @@
+.login-box .user-box .input_2{
+    width: 100%;
+}
+.login-box .user-box .input{
+    width: 100%;
+}
+.login-box {
+position: absolute;
+top: 52%;
+left: 50%;
+width: 800px;
+height: 100%;
+padding: 40px;
+margin: 20px auto;
+transform: translate(-50%, -55%);
+background: rgba(0,0,0,.9);
+box-sizing: border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+border-radius: 10px;
+}
+
+.login-box p:first-child {
+margin: 0 0 30px;
+padding: 0;
+color: #fff;
+text-align: center;
+font-size: 1.5rem;
+font-weight: bold;
+letter-spacing: 1px;
+}
+
+.login-box .user-box {
+position: relative;
+}
+
+.login-box .user-box .name {
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+margin-bottom: 30px;
+border: none;
+border-bottom: 2px solid #01ebfc;
+outline: none;
+background: transparent;
+}
+
+.login-box .user-box label {
+position: absolute;
+top: 0;
+left: 0;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+pointer-events: none;
+transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+top: -20px;
+left: 0;
+color: #fff;
+font-size: 12px;
+}
+
+
+
+
+.input {
+background-color: #383838;
+border: 1ex solid none;
+border-top-width: 1.7em;
+margin: 0;
+padding: 0;
+color: #383838;
+word-wrap: break-word;
+outline: 7px solid #383838;
+height: 30px;
+font-size: 17px;
+text-align: center;
+transition: all 1s;
+max-width: 500px;
+font-weight: bold;
+font-family: 'Courier New', Courier, monospace;
+}
+
+.input:hover {
+border-top-width: 0.2em;
+background-color: #f1e8e8;
+}
+
+.input:focus {
+border-top-width: 0.2em;
+background-color: #f1e8e8;
+}
+.input-div {
+position: relative;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 2px solid rgb(1, 235, 252);
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+box-shadow: 0px 0px 100px rgb(1, 235, 252) , inset 0px 0px 10px rgb(1, 235, 252),0px 0px 5px rgb(255, 255, 255);
+animation: flicker 2s linear infinite;
+}
+
+.icon {
+color: rgb(1, 235, 252);
+font-size: 2rem;
+cursor: pointer;
+animation: iconflicker 2s linear infinite;
+}
+
+.input-1 {
+position: absolute;
+opacity: 0;
+width: 100%;
+height: 100%;
+cursor: pointer !important;
+}
+
+@keyframes iconflicker {
+0% {
+opacity: 1;
+}
+
+5% {
+opacity: 0.2;
+}
+
+10% {
+opacity: 1;
+}
+
+25% {
+opacity: 0.2;
+}
+
+30% {
+opacity: 1;
+}
+
+100% {
+opacity: 1;
+}
+}/* use it in dark theme */
+
+.input-container {
+position: relative;
+width: 190px;
+}
+
+.input-container input[type="number"] {
+font-size: 20px;
+color: rgb(255, 255, 255);
+border: none;
+border-bottom: 2px solid #01ebfc;
+outline: none;
+width: 100%;
+background-color: transparent;
+}
+
+.label {
+transition: all 0.3s ease;
+color: #d3d2d2;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+}
+
+.input-container input[type="number"]:focus~.label,
+    .input-container input[type="number"]:valid~.label {
+top: -20px;
+transition: 0.3s;
+color: white;
+}
+
+.input-container .underline {
+position: absolute;
+bottom: 4px;
+left: -7px;
+height: 2px;
+width: 110%;
+background-color: #01ebfc;
+transform: scaleX(0);
+}
+
+.input-container .sideline {
+position: relative;
+bottom: 15px;
+right: 18px;
+height: 2px;
+width: 18%;
+background-color: #01ebfc;
+transform: scaleX(0);
+rotate: 90deg;
+}
+
+.input-container .upperline {
+position: absolute;
+bottom: 30px;
+left: -8px;
+height: 2px;
+width: 110%;
+background-color: #01ebfc;
+transform: scaleX(0);
+}
+
+.input-container .line {
+position: relative;
+bottom: 17px;
+left: 178px;
+height: 2px;
+width: 18%;
+background-color: #01ebfc;
+transform: scaleX(0);
+rotate: 90deg;
+}
+
+.input-container input[type="number"]:focus~.underline,
+    .input-container input[type="number"]:valid~.underline {
+transform: scaleX(1);
+transition: 1s;
+}
+
+.input-container input[type="number"]:focus~.sideline,
+    .input-container input[type="number"]:valid~.sideline {
+transform: scaleX(1);
+transition: 1s;
+}
+
+.input-container input[type="number"]:focus~.upperline,
+    .input-container input[type="number"]:valid~.upperline {
+transform: scaleX(1);
+transition: 1s;
+}
+
+.input-container input[type="number"]:focus~.line,
+    .input-container input[type="number"]:valid~.line {
+transform: scaleX(1);
+transition: 1s;
+}
+.wave-group {
+position: relative;
+}
+
+.wave-group .input_2{
+font-size: 16px;
+padding: 10px 10px 10px 5px;
+display: block;
+width: 200px;
+border: none;
+border-bottom: 2px solid #01ebfc;
+font-family: 'Times New Roman', Times, serif;
+background: rgba(0,0,0,0.4);
+border-radius: 3px;
+
+color: #fff;
+}
+
+.wave-group .input_2:focus {
+outline: none;
+}
+button {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border-left: 3px ridge #01ebfc;
+    border-right: 3px ridge #01ebfc;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  
+  button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    transition: 0.5s;
+  }
+  
+  button:hover::before, button:hover::after {
+    transform: scale(0)
+  }
+  
+  button:hover {
+    box-shadow: inset 0px 0px 25px #01ebfc;
+  }
+
+  .form {
+    background-color: #fff;
+    box-shadow: 0 10px 60px rgb(218, 229, 255);
+    border: 1px solid rgb(159, 159, 160);
+    border-radius: 20px;
+    padding: 2rem .7rem .7rem .7rem;
+    text-align: center;
+    font-size: 1.125rem;
+    max-width: 320px;
+  }
+  
+  .form-title {
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  
+  .form-paragraph {
+    margin-top: 10px;
+    font-size: 0.9375rem;
+    color: rgb(105, 105, 105);
+  }
+  
+  .drop-container {
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 2.1875rem;
+    border-radius: 10px;
+    border: 2px dashed rgb(171, 202, 255);
+    color: #444;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+  }
+  
+  .drop-container:hover {
+    background: rgba(0, 140, 255, 0.164);
+    border-color: rgba(17, 17, 17, 0.616);
+  }
+  
+  .drop-container:hover .drop-title {
+    color: #222;
+  }
+  
+  .drop-title {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+  }
+  
+  #file-input {
+    width: 350px;
+    max-width: 100%;
+    color: #444;
+    padding: 2px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(8, 8, 8, 0.288);
+  }
+  
+  #file-input::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  #file-input::file-selector-button:hover {
+    background: #0d45a5;
+  }

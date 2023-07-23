@@ -1,0 +1,261 @@
+.div-1{
+    
+    width: 100%;
+    height: 600px;
+    background-image:  url(../img/shoe1.jpg);
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
+}
+.div-2{
+    padding-top:130px;
+    box-sizing: border-box;
+    background-color: rgba(65, 65, 65, 0.5);
+    border-top-right-radius: 100%;
+    width: 40%;
+    height: 500px;
+}
+.h1-1{
+    font-family: 'Brush Script MT';
+    padding-left: 70px;
+    font-size: 50px;
+    color: white;
+}
+.h2-1{
+    font-family: 'Baskerville';
+    font-size: 30px;
+    text-transform: capitalize;
+    color: white;
+}
+.div-3{
+ 
+    margin: 0px auto;
+    box-sizing: border-box;
+    width: 1300px;
+    height: 700px;
+    padding: 10px; 
+    border-radius: 15px;
+    background-image: url(../img/nike.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: -10px -15px 10px 7px wheat, 10px 15px 20px black;
+}
+.div-4{
+  width: 1300px;
+  height: 700px;
+  position: relative;
+}
+.div-5{
+    margin: 50px auto;
+    box-sizing: border-box;  
+    width: 1300px;
+    height: 700px;
+    padding: 10px; 
+    border-radius: 15px;
+    background-image: url(../img/adidas.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    box-shadow: -10px -15px 10px 7px wheat, 10px 15px 20px black;
+  
+}
+.div-6{
+  margin: 50px auto;
+  box-sizing: border-box;
+  width: 1300px;
+  height: 700px;
+  padding: 10px; 
+  border-radius: 15px;
+  background-image: url(../img/puma.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: -10px -15px 10px 7px wheat, 10px 15px 20px black;
+  
+}
+.box_1{
+    background-image: url(../img/women-shoe.jpg);
+    background-repeat: no-repeat;
+    background-size: 640px 300px;
+    width: 640px;
+    height: 300px;
+    float: left;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 10px;
+}
+.box_2{
+    background-image: url(../img/men-shoe.jpg);
+    background-repeat: no-repeat;
+    background-size: 640px 300px;
+    width: 640px;
+    height: 300px;
+    float: left;
+    margin-top: 310px;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 10px;
+}
+.box_3{
+    width: 640px;
+    height: 610px;
+    background-image: url(../img/kid-shoe.jpg);
+    background-repeat: no-repeat;
+    background-size: 640px 610px;
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 650px;
+    border-radius: 10px;
+}
+
+header ul li{
+    display: inline-block;
+}
+.menu{
+    display: inline-block;
+    position: relative;
+    clear: left;
+    cursor: pointer;
+}
+.menu ul.sup-menu a{
+    padding: 8px 15px;
+    
+}
+.sup-menu {
+    display: inline-block;
+    position: absolute;
+    padding: 15px 0px;
+    display: none;
+    font-size: 15px;
+    width: 100px;
+    background-color: white;
+    text-decoration-line: none;
+    border-radius: 2px;
+    
+}
+.sup-menu li{
+    padding: 15px 0px;
+}
+.sup-menu li a{
+    text-decoration-line: none;
+    color: black;
+    white-space: nowrap;
+    width: 100%;
+}
+.sup-menu li a:hover{
+    color: red;
+}
+.menu:hover .sup-menu{
+    display: block;
+}
+.box {
+  width: 600px;
+  height: auto;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.box:hover:before {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.box:hover:after {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+
+.nav-links{
+  display:flex;
+  gap: 40px;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: white;
+  letter-spacing: -0.5px;
+}
+a:hover{
+  color:rgb(122, 120, 120);
+  transition: all 0.5s ease;
+}
+.nav-link{
+  text-decoration: none;
+}
+
+.dropdown{
+  cursor:default;
+}
+.dropdown ul{
+  display: none;
+  background-color: white;
+  padding:10px;
+  list-style: none;
+  transition: all 15s ease;
+
+}
+.dropdown ul li a{
+  color:black;
+}
+.dropdown ul li a:hover{
+  color: red;
+}
+.dropdown ul li{
+  margin:8px;
+}
+
+.dropdown:hover>ul{
+  display:list-item;
+  position:absolute;
+  list-style: none;
+  transition: all 0.5s ease;
+}
