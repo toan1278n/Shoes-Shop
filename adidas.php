@@ -7,7 +7,7 @@
   INNER JOIN category as c ON c.id_category = p.id_category
   WHERE b.name_brand = 'Adidas' ORDER BY price $sort";
   $result4 = mysqli_query($conn, $sql4);
-  
+  $echo
 ?>
 
 
