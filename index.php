@@ -1,8 +1,3 @@
-<?php 
-include_once "header.php";
-require_once "config.php";
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -27,10 +22,10 @@ require_once "config.php";
 </center>
 <br>
    <div class="div-3">
-        <div style="margin-top: 550px; margin-left: 100px;"><a class="button" href="nike.php" role="button">Buy now <img src="icon/shopping-cart-16.png" alt="" width="30px" height="20px"> </a></div>
+        <div style="margin-top: 550px; margin-left: 100px;"><a class="button" href="nike.php" role="button">Buy now <img src="/icon/shopping-cart-16.png" alt="" width="30px" height="20px"> </a></div>
    </div> 
    <div class="div-5">
-          <div style="margin-top: 550px; margin-left: 1000px;"><a class="button_1" href="adidas.php" role="button">Buy now <img src="icon/shopping-cart-16.png" alt="" width="30px" height="20px" style="margin-left: 20px;"> </a></div>
+          <div style="margin-top: 550px; margin-left: 1000px;"><a class="button_1" href="adidas.php" role="button">Buy now <img src="/icon/shopping-cart-16.png" alt="" width="30px" height="20px" style="margin-left: 20px;"> </a></div>
     </div>
     <div class="div-6">
     <div style="margin-top: 550px; margin-left: 1000px;"><button class="button_2"><span class="main-text"><a href="puma.php" style="text-decoration-line: none; color:aliceblue;">Buy here<span> <span>→</span> </a></span></span></button></a></div>
